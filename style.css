@@ -1,0 +1,185 @@
+    * {
+        font-family: 'Ubuntu', sans-serif;
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0px;
+        padding: 0px;
+        width: 100vw;
+        height: 100vh;
+        background-color: #777;
+        background-color: blanchedalmond;
+
+    }
+    .note{
+      color:white;
+      position: relative;
+      display: inline;
+      left: 85%;
+      top:70%;
+
+    }
+    .container {
+        position: relative;
+        height: 100vh;
+        width: 100%;
+        overflow: hidden;
+        /* border: 2px solid red; */
+    }
+
+    .btn {
+        position: absolute;
+        /* z-index: -1; */
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        transition: height 0.7s, width 0.7s;
+
+        height: 0px;
+        width: 0px;
+        border-radius: 50%;
+        /* border-radius: 50% 50% 50% 50% / 30% 30% 70% 70% ; */
+        background-color: #fd7e14;
+
+    }
+
+    .btn:hover {
+
+        width: 2220px;
+        height: 2220px;
+        /* background-color: #fd7e14; /*color js changing on click*/ */
+    }
+
+    .btn .itm {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+
+        /* height: 100px; */
+        /* width: 100px; */
+        border: 2px solid black;
+        border-radius: 50%;
+        /* border-radius: 50% 50% 50% 50% / 100% 100% 0% 0%; */
+        padding: 18px;
+        font-size: 30px;
+        letter-spacing: 1px;
+
+        text-align: center;
+        /* background-color: rgba(253, 126, 20, 0.5); */
+
+    }
+
+    .btn .itm .icon {
+        font-size: 3rem;
+        color: #dc3510;
+    }
+
+    .btn:hover .itm .icon {
+      color: #fff;
+        /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+        animation: shake 0.8s linear infinite ;
+        transform-origin: 50% 100%;
+
+    }
+    .btn:hover .itm {
+      animation: colz 5s infinite ;
+      border: 2px solid #fff;
+
+    }
+@keyframes colz {
+0% {
+    border: 2px solid #fff;
+}
+10% {
+    border: 22px solid #fff;
+}
+50% {
+    border: 5px solid #000;
+}
+100% {
+    border: 5px solid #fff;
+}
+
+
+}
+    @keyframes shake {
+        0% {
+            transform: translate(3px, 2px) rotate(1deg);
+        }
+
+        10% {
+            transform: translate(-2px, -3px) rotate(-2deg);
+        }
+
+        20% {
+            transform: translate(-4px, 1px) rotate(3deg);
+        }
+
+        30% {
+            transform: translate(1px, 3px) rotate(1deg);
+        }
+
+        40% {
+            transform: translate(2px, -2px) rotate(1deg);
+        }
+
+        50% {
+            color: #dc3510;
+            transform: translate(-2px, 3px) rotate(-1deg);
+        }
+
+        60% {
+            transform: translate(-4px, 2px) rotate(1deg);
+        }
+
+        70% {
+            transform: translate(3px, 2px) rotate(-2deg);
+        }
+
+        80% {
+            transform: translate(-2px, -2px) rotate(4deg);
+        }
+
+        90% {
+            transform: translate(3px, 3px) rotate(1deg);
+        }
+
+        100% {
+            transform: translate(2px, -3px) rotate(-1deg);
+        }
+    }
+
+@keyframes bakcol {
+0% {
+  background-color: : red;
+}
+100% {
+  background-color: : green;
+}
+
+}
+#h2{
+  transition: 0.3s;
+}
+#h3{
+  transition: 0.3s;
+}
+    .cont {
+        position: relative;
+        margin: 40px;
+        z-index: 2;
+        color: #000;
+        /* border: 2px solid black; */
+    }
+
+    /* .content {
+        position: relative;
+        height: 100vh;
+        width: 100%; */
+
+        /* border: 3px solid blue; */
+    }
