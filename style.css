@@ -51,6 +51,7 @@
         font-size: 30px;
         padding: 18px;
         border-radius: 50%;
+        border: 2px solid #000;
         /* background-color: rgba(253, 126, 20, 0.5); */
     }
 
