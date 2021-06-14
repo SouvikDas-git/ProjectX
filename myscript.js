@@ -1,3 +1,4 @@
+//new changes are made
 var int = 1; //counter var
 var str1 = document.getElementById('h2').innerHTML;
 var str2 = document.getElementById('h3').innerHTML;
