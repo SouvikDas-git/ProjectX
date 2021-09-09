@@ -6,12 +6,10 @@
 }
 
 body {
-  margin: 0px;
-  padding: 0px;
   width: 100vw;
   height: 100vh;
-  background-color: #777;
-  background-color: blanchedalmond;
+  /* background-color: #777; */
+  /* background-color: blanchedalmond; */
 }
 
 .container {
@@ -24,22 +22,15 @@ body {
 
 .btn {
   position: absolute;
-  /* z-index: -1; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  transition: height 0.7s, width 0.7s;
   height: 0px;
   width: 0px;
   border-radius: 50%;
   /* border-radius: 50% 50% 50% 50% / 30% 30% 70% 70% ; */
   background-color: #fd7e14;
-}
-
-.btn:hover {
-  width: 2220px;
-  height: 2220px;
-  /* background-color: #fd7e14; /*color js changing on click*/
+  transition: height 0.7s, width 0.7s;
 }
 
 .btn .itm {
@@ -60,14 +51,24 @@ body {
   color: #dc3510;
 }
 
-.btn:hover .itm .icon {
+.effect {
+  width: 2220px;
+  height: 2220px;
+  /* background-color: #fd7e14; /*color js changing on click*/
+}
+
+.effect #h2 {
+  font-size: 40px;
+}
+
+.effect .itm .icon {
   color: #fff;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation: shake 0.8s linear infinite forwards;
   transform-origin: 50% 100%;
 }
 
-.btn:hover .itm {
+.effect .itm {
   border: 2px solid #fff;
   /* animation: name duration timing-function delay iteration-count direction fill-mode; */
   animation: colz 5s linear infinite forwards;
@@ -108,52 +109,52 @@ body {
 
 @keyframes colz {
   0% {
-      border: 2px solid #fff;
+    border: 2px solid #fff;
   }
   10% {
-      border: 22px solid #fff;
+    border: 22px solid #fff;
   }
   50% {
-      border: 5px solid #000;
+    border: 5px solid #000;
   }
   100% {
-      border: 5px solid #fff;
+    border: 5px solid #fff;
   }
 }
 
 @keyframes shake {
   0% {
-      transform: translate(3px, 2px) rotate(1deg);
+    transform: translate(3px, 2px) rotate(1deg);
   }
   10% {
-      transform: translate(-2px, -3px) rotate(-2deg);
+    transform: translate(-2px, -3px) rotate(-2deg);
   }
   20% {
-      transform: translate(-4px, 1px) rotate(3deg);
+    transform: translate(-4px, 1px) rotate(3deg);
   }
   30% {
-      transform: translate(1px, 3px) rotate(1deg);
+    transform: translate(1px, 3px) rotate(1deg);
   }
   40% {
-      transform: translate(2px, -2px) rotate(1deg);
+    transform: translate(2px, -2px) rotate(1deg);
   }
   50% {
-      color: #dc3510;
-      transform: translate(-2px, 3px) rotate(-1deg);
+    color: #dc3510;
+    transform: translate(-2px, 3px) rotate(-1deg);
   }
   60% {
-      transform: translate(-4px, 2px) rotate(1deg);
+    transform: translate(-4px, 2px) rotate(1deg);
   }
   70% {
-      transform: translate(3px, 2px) rotate(-2deg);
+    transform: translate(3px, 2px) rotate(-2deg);
   }
   80% {
-      transform: translate(-2px, -2px) rotate(4deg);
+    transform: translate(-2px, -2px) rotate(4deg);
   }
   90% {
-      transform: translate(3px, 3px) rotate(1deg);
+    transform: translate(3px, 3px) rotate(1deg);
   }
   100% {
-      transform: translate(2px, -3px) rotate(-1deg);
+    transform: translate(2px, -3px) rotate(-1deg);
   }
 }
